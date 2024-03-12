@@ -52,6 +52,7 @@ api.get("/students/:id", (req, res) => {
   res.json(student);
 });
 
+//declare(deptCode)
 api.patch("/students/:id", (req, res) => {
   let student = STUDENTS[req.params.id];
   if ("dept" in req.body) {
